@@ -1,5 +1,5 @@
 'use strict';
-// generated on 2014-11-21 using generator-gulp-webapp 0.1.0
+// generated on 2014-11-04 using generator-gulp-webapp 0.1.0
 
 var gulp = require('gulp');
 
@@ -44,11 +44,11 @@ gulp.task('html', ['styles', 'scripts'], function () {
 
 gulp.task('images', function () {
     return gulp.src('app/images/**/*')
-        .pipe($.cache($.imagemin({
+        .pipe($.imagemin({
             optimizationLevel: 3,
             progressive: true,
             interlaced: true
-        })))
+        }))
         .pipe(gulp.dest('dist/images'))
         .pipe($.size());
 });
