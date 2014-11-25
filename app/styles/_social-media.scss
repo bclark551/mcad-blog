@@ -1,0 +1,20 @@
+.social-media {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  @include clearfix;
+  li {
+    float: left;
+  }
+  a {
+    padding: 0.25em;
+    display: inline-block;
+    color: $black;
+  &:hover {
+    color: $pink;
+  }
+  }
+  span {
+    @include visuallyhidden;
+  }
+}

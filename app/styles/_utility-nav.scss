@@ -1,0 +1,39 @@
+.utility-logo-group {
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 1em;
+  opacity: .40;
+  img {
+    width: 9em;
+    padding: .5em;
+  }
+}
+.header-utilities {
+  @include clearfix;
+  margin: 0 1em 0 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    float: left;
+    margin-right: 2em;
+    padding: 0.5em;
+    border-left: 1px solid $black;
+    width: 9em;
+    span {
+      display: block;
+    }
+  }
+  .brochure {
+    background-image: url(http://mcadsustainabledesign.james.mn/wp-content/themes/theme_sdonew/img/sdo_broch.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      color: $black;
+      opacity: 1;
+    }
+  }
+}
