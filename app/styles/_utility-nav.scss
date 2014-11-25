@@ -5,6 +5,10 @@
   img {
     width: 9em;
     padding: .5em;
+    opacity: .4;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 .header-utilities {
